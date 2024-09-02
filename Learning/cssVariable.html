@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable in CSS</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Root is used for create  global variable. */
+        :root{
+            /* --color is a global variable */
+            --color:rgb(152, 41, 41);
+            --secolor:rgb(76, 76, 151);
+        }
+        div:first-child{
+            /* for local variable */
+            --color:rgb(111, 146, 202);
+            background-color: var(--color);
+        }
+        div{
+            /* it is used a variable. */
+            background-color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ad deserunt laborum, numquam atque molestias, neque repudiandae voluptatibus doloremque voluptatem unde? Harum incidunt ut natus vitae vel quo sint impedit?
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ad deserunt laborum, numquam atque molestias, neque repudiandae voluptatibus doloremque voluptatem unde? Harum incidunt ut natus vitae vel quo sint impedit?
+    </div>
+</body>
+</html>
